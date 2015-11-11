@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблон</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">  
+  <link type="text/css" rel="stylesheet" href="font/font.css">
+  <link type="text/css" rel="stylesheet" href="style.css">  
+  <link type="text/css" rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/styles-carousel.css">
+  <link href="favicon.ico" type="image/x-icon" rel="icon">
+  <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+<script src="js/slides.js"></script>
+
+</head>
+<body class="body">  
+     
+<!-- /////////////////////////// Pop-up \\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<a href="#x" class="overlay" id="order-call"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="order-form">      
+          <div class="contens-form">
+            <p class="form-descript"><span>отправьте заявку</span></p>
+            <p style="font-size: 25px;" class="form-big-text">МЫ ВАМ ПЕРЕЗВОНИМ</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+          </div>
+        </div>
+      </div>     
+
+<a href="#x" class="overlay" id="system1"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">IP – видеонаблюдение</p> 
+        <div class="icon-block">
+          <img src="img/system1.png">
+        </div>  
+
+        <p class="system-description">Это система телевизионного наблюдения, использующая технологии локальных сетей . Имеет самое высокое разрешение отснятой картинки (максимальная детализация объектов наблюдения), что реализуется установкой на персональный компьютер специального программного обеспечения.</p>
+        <p class="system-text">Используется на объектах, где требуется максимальная детализация картинки:</p>
+        <ul>
+          <li class="system-list">Автостоянки</li>
+          <li class="system-list">Прикассовая зона</li>
+          <li class="system-list">Неохраняемые пропускные пункты</li>
+          <li class="system-list">В складских помещения</li>
+          <li class="system-list">Пункты приема-отгрузки товара</li>
+        </ul>
+        <p class="price">Стоимость: от 15 500 р до 2000000 руб</p>
+        <p class="srok">Срок установки: 1-2 дня (в зависимости от кол-ва IP камер)</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: IP – видеонаблюдение">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system2"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Скрытое видеонаблюдение</p> 
+        <div class="icon-block">
+          <img src="img/system2.png">
+        </div>  
+
+        <p class="system-description">Бывают ситуации, когда обойтись без видеонаблюдения просто невозможно, а установка открытых систем видеонаблюдения попросту не даст нужного эффекта. Наши специалисты смогут произвести монтаж скрытых видеокамер в такие материалы как дерево, бетон, пластик, металл.</p>
+        <p class="system-text">Используется на объектах, где требуется максимальная детализация картинки:</p>
+        <ul>
+          <li class="system-list">Магазины</li>
+          <li class="system-list">Офисы</li>
+          <li class="system-list">Парадные домов</li>
+          <li class="system-list">Видеоконтроль работы няни или другой прислуги</li>
+        </ul>
+        <p class="price">Стоимость: от 14 200 руб  до 400000 руб</p>
+        <p class="srok">Срок установки: 1 день</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Скрытое видеонаблюдение">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system3"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Уличное видеонаблюдение</p> 
+        <div class="photos-block">
+          <img src="images/street/1.jpg">
+          <img src="images/street/2.jpg">
+          <img src="images/street/3.jpg">
+          <img src="images/street/4.jpg">
+        </div>  
+
+        <p class="system-description">Уличное видеонаблюдение позволяет быть в курсе того, что происходит на прилегающих территориях объекта наблюдения. Поскольку обычные камеры не могут нормально работать в условиях минусовых температур, то в таких системах оптика располагается в герметичном корпусе с подогревом.</p>
+        <p class="system-text">Используется для контроля прилегающей к объекту территории:</p>
+        <ul>
+          <li class="system-list">Дворы жилых домов</li>
+          <li class="system-list">Автостоянки</li>
+          <li class="system-list">Территория офисов</li>
+          <li class="system-list">Пункты приема-отгрузки товара</li>
+          <li class="system-list">На территории коттеджа</li>
+        </ul>
+        <p class="price">Стоимость: от 18 400 руб.  до 800000 руб.</p>
+        <p class="srok">Срок установки: 1-2 дня (в зависимости от кол-ва камер)</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Уличное видеонаблюдение">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system4"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Видеонаблюдение в помещении</p> 
+        <div class="icon-block">
+          <img src="img/system4.png">
+        </div>  
+
+        <p class="system-description">Это самый распространённый вариант видеоконтроля, его ещё называют "Внутреннее видеонаблюдение", по сравнению со всеми остальными подвидами видеонаблюдения, внутреннее видеонаблюдение предоставляет наибольшее количество информации о событиях происходящих на объекте, а также позволяет записывать и детально анализировать события по архиву данных.</p>
+        <p class="system-text">Используется на любых объектах где необходим видеоконтроль:</p>
+        <ul>
+          <li class="system-list">Магазины</li>
+          <li class="system-list">Офисы</li>
+          <li class="system-list">Складские помещения</li>
+          <li class="system-list">Квартиры</li>
+          <li class="system-list">Кафе, Рестораны</li>
+          <li class="system-list">Детские сады и школы</li>
+        </ul>
+        <p class="price">Стоимость: от 13 200 руб.  до 3 000 000 руб.</p>
+        <p class="srok">Срок установки: 1-2 дня (в зависимости от кол-ва камер)</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Видеонаблюдение в помещении">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system5"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Видеодомофоны</p> 
+        <div class="photos-block">
+          <img src="images/domofon/1.jpg">
+          <img src="images/domofon/2.jpg">
+          <img src="images/domofon/3.jpg">
+          <img src="images/domofon/4.jpg">
+        </div>  
+
+        <p class="system-description">Это  переговорные устройство с экраном, предназначенные для ограничения доступа посетителей в помещение, видеодомофон позволяет не только услышать, но и увидеть посетителя. </p>
+        <p class="system-text">Используется в помещениях, где необходим визуальный контроль посетителей:</p>
+        <ul>
+          <li class="system-list">Офисы</li>
+          <li class="system-list">Квартиры</li>
+          <li class="system-list">Коттеджи</li>
+          <li class="system-list">Детские сады и школы</li>
+          <li class="system-list">Любые приемно-пропускные пункты</li>
+        </ul>
+        <p class="price">Стоимость: от 15 000 руб.  до 240 000 руб.</p>
+        <p class="srok">Срок установки: 1 день.</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Видеодомофоны">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system6"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Шлагбаумы</p> 
+        <div class="photos-block">
+          <img src="images/shlagbaum/1.jpg">
+          <img src="images/shlagbaum/2.jpg">
+          <img src="images/shlagbaum/3.jpg">
+          <img src="images/shlagbaum/4.jpg">
+        </div>   
+
+        <p class="system-description">Шлагбаум - это устройство, предназначенное для ограничения въезда и выезда на какую-либо территорию. Чтобы упростить их использование, были разработаны автоматические шлагбаумы, представляющие собой систему, работающую на удаленном или дистанционном управлении.</p>
+        <p class="system-text">Используется для ограничения транспортного потока на территорию:</p>
+        <ul>
+          <li class="system-list">Парковки многоквартирных домов</li>
+          <li class="system-list">Парковки Бизнес центров или офисов</li>
+          <li class="system-list"> Ограничение въезда и выезда на частную территорию</li>
+        </ul>
+        <p class="price"> Стоимость: от 70 000 руб.  до 200 000 руб.</p>
+        <p class="srok">Срок установки: 2-3 дня </p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Шлагбаумы">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system7"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Карточная система контроля доступа</p> 
+        <div class="icon-block">
+          <img src="img/system7.png">
+        </div>  
+
+        <p class="system-description">Карточные  системы контроля доступа предоставляют право прохода лицам имеющим электронные ключи и ограничивают доступ, не имеющих на это прав. </p>
+        <p class="system-text">Используется в местах, где необходимо запретить доступ посторонним лицам, а нанимать охранника является необоснованным действием:</p>
+        <ul>
+          <li class="system-list">Офисные помещения</li>
+          <li class="system-list">Фитнес центы</li>
+          <li class="system-list">Любые помещения с доступом ограниченному кругу лиц</li>
+        </ul>
+        <p class="price">Стоимость: от 11 800 руб.  до 1 000 000 руб.</p>
+        <p class="srok">Срок установки: 1-2 дня </p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Карточная система контроля доступа">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+      <a href="#x" class="overlay" id="system8"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="system-info">      
+        <p class="system-title">Биометрическая система контроля доступа</p> 
+        <div class="icon-block">
+          <img src="img/system8.png">
+        </div>  
+
+        <p class="system-description">Биометрические технологии во всем мире признаны как самые точные и надежные, обеспечивающие строгий контроль доступа и защиту учреждений и организаций от «нежелательных гостей»</p>
+        <p class="system-text">Используется в местах, где необходимо запретить доступ посторонним лицам и надежность стоит на первом месте.</p>
+
+        <p class="price">Стоимость: от 70 000 руб.  до 200 000 руб.</p>
+        <p class="srok">Срок установки: 2-3 дня </p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="hidden" name="adress" value="ФОРМА: Биометрическая система контроля доступа">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+        <div class="guarantie2"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+
+<a href="#x" class="overlay" id="privacy-policy"></a>
+    <div class="popup">
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="privacy-polisyy">      
+      <p class="privacy-text">
+
+<div><>Администрация сайта </a><a href="#"><span>#</span></a><span> (далее Сайт) с уважением относится к правам посетителей Сайта. Мы безоговорочно признаем важность конфиденциальности личной информации посетителей нашего Сайта.</span></div>
+<div><span>Посещая Сайт и пользуясь его услугами, Вы полностью соглашаетесь с данной Политикой конфиденциальности.</span></div>
+<div><strong><span>Основные положения нашей политики конфиденциальности формулируются следующим образом:</span></strong></div>
+<div><span><span>&middot;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Мы не передаем Ваши персональную информацию третьим лицам.</span></div>
+<div><span><span>&middot;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Мы не передаем Вашу контактную информацию без Вашего согласия.</span></div>
+<div><span><span>&middot;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Вы самостоятельно определяете объем раскрываемой персональной информации.</span></div>
+
+<div><span>Мы оставляем за собой право вносить изменения в настоящую политику конфиденциальности в любое время без предварительного уведомления.</span></div>
+<div><span>По всем возникающим вопросам Вы всегда можете обратиться к Администрации Сайта </span><a href="mailto:info@camsecurity.ru"><span>info@camsecurity.ru</span></a></div>
+<div>&nbsp;</div>
+
+
+</p>
+        </div>
+      </div>     
+
+
+    <!-- All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens  -->
+    <!-- All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens  -->
+    <!-- All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens All-contens  -->
+    <!--    Fixed Bclock    -->
+   <div class="Fixed">
+     <a title="Посмотрите ознакомительный PDF" href="PDF/prise_video.pdf">ознакомится</a>
+    </div>
+    <!-- end fixed-->
+
+    <div class="header-bg">
+      <div class="container">
+        <div class="logoNdescript">
+        <a href="index.php"><img src="img/top-logo.png"></a>
+        <p class="description">Системы видеонаблюдения и контроля доступа под ключ. Проектирование, монтаж, обслуживание.</p>
+        </div>
+
+        <div class="order-box">
+          <p class="telephone"> (000) <span class="width40-bold">000-00-00-00</span></p>
+          <a href="#order-call" class="order-call">Заказать звонок</a>
+        </div>
+
+        <div class="top-form-contain">
+          <div class="contens-form">
+            <p class="form-descript"><span>при заказе</span><br>системы на 6 и более камер</p>
+            <p class="form-big-text">МОНИТОР В ПОДАРОК</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+          <div class="guarantie"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="in-numbers">
+      <div class="numb container">
+      </div>
+    </div>
+
+    <div class="video-in-phone">
+      <div class="container">
+        <p class="phone-text1">Закажите бесплатно<br>расчет 3-х вариантов системы</p>
+        <p class="phone-text2">И УЖЕ ЗАВТРА НАБЛЮДАЙТЕ ЗА<br>СВОИМ БИЗНЕСОМ СО СВОЕГО<br>СМАРТФОНА</p>
+      </div>
+    </div>
+
+    <div class="header1">
+    <p class="my-header">наши<br><span class="big-title">ПРЕИМУЩЕСТВА</span></p>
+    </div>
+    <div class="priimuschestva">
+      <div class="container">
+      <div class="inline3">
+        <div class="benefit1">
+         <p class="benefit-text">ПРОФЕССИОНАЛИЗМ СПЕЦИАЛИСТОВ. МИНИМАЛЬНЫЙ ОПЫТ РАБОТЫ 5 ЛЕТ.</p>
+        </div>
+      </div>
+      <div class="inline3">
+      <div class="benefit2">
+      <p class="benefit-text">БОЛЬШОЙ ОПЫТ РАБОТЫ
+5 ЛЕТ НА РЫНКЕ БЕЗОПАСТНОСТИ. БОЛЕЕ 180 ДОВОЛЬНЫХ КЛИЕНТОВ</p>
+        </div>
+      </div>
+      <div class="inline3">
+      <div class="benefit3">
+      <p class="benefit-text">ТОЧНОЕ<br>ВЫПОЛНЕНИЕ<br>В СРОК</p>
+        </div>
+      </div>
+      <div class="inline3">
+      <div class="benefit4">
+      <p class="benefit-text">ЗАМЕРЫ И СМЕТА БЕСПЛАТНО. ВЫЕЗЖАЕМ В ЛЮБУЮ ТОЧКУ САНКТ-ПЕТЕРБУРГА И ОБЛАСТИ</p>
+        </div>
+      </div>
+      <div class="inline3">
+      <div class="benefit5">
+      <p class="benefit-text">ВЫБЕРЕТЕ ТО, ЧТО НУЖНО ИМЕННО ВАМ. ПРЕДЛОЖИМ 3 ВАРИАНТА РЕШЕНИЯ ВАШЕЙ ПРОБЛЕМЫ.</p>
+        </div>
+      </div>
+      <div class="inline3">
+      <div class="benefit6">
+      <p class="benefit-text">ГАРАНТИЯ КАЧЕСТВА - 1 ГОД ГАРАНТИЯ НА ОБОРУДОВАНИЕ. 2 ГОДА НА МОНТАЖНЫЕ РАБОТЫ.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="middle-form">
+    <div class="container">
+        <div class="top-form-contain">
+          <div class="contens-form">
+            <p class="form-descript"><span>при заказе</span><br>системы на 6 и более камер</p>
+            <p class="form-big-text">МОНИТОР В ПОДАРОК</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+          <div class="guarantie"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="how-wie">
+      <div class="container how-bg">
+        <div class="numbers">  
+          <div class="one-li">
+            <p class="my-number">1.</p>
+            <p class="one-punkt">Гарантия соблюдения сроков.</p>
+          </div>
+          <div class="one-li">
+            <p class="my-number">2.</p>
+            <p class="one-punkt">Бесплатная демонстрация оборудования
+перед заключением договора.</p>
+          </div>
+          <div class="one-li">
+            <p class="my-number">3.</p>
+            <p class="one-punkt">Используем только сертифицированное
+оборудование.</p>
+          </div>
+          <div class="one-li">
+            <p class="my-number">4.</p>
+            <p class="one-punkt">Бесплатный выезд замерщика и
+составление сметы в 3-х вариантах.</p>
+          </div>
+          <div class="one-li">
+            <p class="my-number">5.</p>
+            <p class="one-punkt">Мы вернем деньги в обмен на
+оборудование в течение 10 дней, если
+система вас не устроит.</p>
+          </div>
+          <div class="one-li">
+            <p class="my-number">6.</p>
+            <p class="one-punkt">Возможность наличного и безналичного
+расчёта.</p>
+          </div>
+         
+        </div>       
+      </div>
+    </div>
+
+    <div class="header2">
+    <p class="my-header">какие системы<br><span class="big-title">мы устанавливаем?</span></p>
+    </div>
+    <div class="container">
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system1.png"></div>
+    <a class="oder-link" href="#system1"><br>IP-Видеонаблюдение</a>
+    </div>
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system2.png"></div>
+    <a class="oder-link" href="#system2"><br>Скрытое<br>видеонаблюдение</a>
+    </div>
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system3.png"></div>
+    <a class="oder-link" href="#system3"><br>Уличное<br>видеонаблюдение</a>
+    </div>
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system4.png"></div>
+    <a class="oder-link" href="#system4"><br>Видеонаблюдение<br>в помещении</a>
+    </div>
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system5.png"></div>
+    <a class="oder-link" href="#system5"><br>Видеодомофоны</a>
+    </div>
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system6.png"></div>
+    <a class="oder-link" href="#system6"><br>Шлагбаумы</a>
+    </div>
+    <div class="oure-systems1">
+    <div class="image-sys1"><img src="img/system7.png"></div>
+    <a class="oder-link" href="#system7"><br>Карточная система<br>контроля доступа</a>
+    </div>
+    <div class="oure-systems1">
+    <img src="img/system8.png">
+    <a class="oder-link" href="#system8"><br>Биометрическая<br>система контроля доступа</a>
+    </div>
+    </div>
+    <div class="container">
+    <hr>
+    <div class="header2">
+    <p class="my-header">какие системы<br><span class="big-title">мы устанавливаем?</span></p>
+    </div>
+    <div class="inline2">
+      <p class="system2-text1">Контроль за персоналом</p>
+      <p class="system2-text2">Наши системы видеонаблюдения позволяют наблюдать за вашими сотрудниками с экрана мобильного телефона  в любом месте где есть интернет.</p>
+    </div>
+    <div class="inline2">
+      <p class="system2-text1">Безопасность вашего бизнеса</p>
+      <p class="system2-text2">На сегодняшний день перед владельцами бизнеса стоит проблема защиты коммерческой информации. Профессионально видеонаблюдение – одно из решений.</p>
+    </div>
+    <div class="inline2">
+      <p class="system2-text1">Контроль за няней вашего ребенка</p>
+      <p class="system2-text2">Наш опыт позволяет осуществлять скрытое видеонаблюдение в вашей квартире за няней или другой прислугой.</p>
+    </div>
+    <div class="inline2">
+      <p class="system2-text1">Безопасность имущества</p>
+      <p class="system2-text2">Системы видеонаблюдения позволяют хранить в памяти более месяца отснятого материала. Благодаря этому никакое действие злоумышленников не останется безнаказанным.</p>
+    </div>
+    </div>
+
+    <div class="slider-bg">
+      <div class="container">
+
+      <div class="carousel">    
+        <div class="carousel-button-left"><a href="javascript:void(0);">&nbsp;</a></div> 
+          <div class="carousel-button-right"><a href="javascript:void(0);">&nbsp;</a></div>      
+            <div class="shadow-block" style="padding-left:0px;">
+              <div class="t"><div class="b"><div class="m"><div class="m">
+              <div class="t"><div class="t"><div class="b"><div class="b">
+              <div class="carousel-wrapper"> 
+               <div class="carousel-items"> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid1.jpg" alt="" />
+                  </div>
+                  
+                  <div class="carousel-block">
+                        <img src="images/vid2.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid3.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid4.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid5.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid6.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid7.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid8.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid9.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid10.jpg" alt="" />
+                  </div> 
+
+                  <div class="carousel-block">
+                        <img src="images/vid11.jpg" alt="" />
+                  </div>                  
+               
+               </div>
+            </div>
+         </div></div>
+         </div></div></div>
+         </div></div></div>
+      </div>   
+   </div>
+
+        <div class="top-form-contain">
+          <div class="contens-form">
+            <p class="form-descript"><span>при заказе</span><br>системы на 6 и более камер</p>
+            <p class="form-big-text">МОНИТОР В ПОДАРОК</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">          
+          <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="отправить заявку">
+        </form>
+          <div class="guarantie"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не рассылаем спам</a></div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="header2">
+    <p class="my-header">наши<br><span class="big-title">серитификаты</span></p>
+    </div>
+    <div class="certificates">
+    <a class="mymy" href="#image1"><img src="img/certificates/1min.jpg"></a>
+    <a class="mymy" href="#image2"><img src="img/certificates/2min.jpg"></a>
+    <a class="mymy" href="#image3"><img src="img/certificates/3min.jpg"></a>
+    <a class="mymy" href="#image4"><img src="img/certificates/4min.jpg"></a>
+    <a class="mymy" href="#image5"><img src="img/certificates/5min.jpg"></a>
+
+
+ <a href="#x" class="overlay" id="image1"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt=""  src="img/certificates/1.jpg">        
+    </div>      
+    </div>
+
+     <a href="#x" class="overlay" id="image2"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt=""  src="img/certificates/2.jpg">        
+    </div>      
+    </div>
+
+     <a href="#x" class="overlay" id="image3"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt=""  src="img/certificates/3.jpg">        
+    </div>      
+    </div>
+
+     <a href="#x" class="overlay" id="image4"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt=""  src="img/certificates/4.jpg">        
+    </div>      
+    </div>
+
+     <a href="#x" class="overlay" id="image5"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt=""  src="img/certificates/5.jpg">        
+    </div>      
+    </div>
+    </div>
+
+    <div class="header2">
+    <p class="my-header">схема<br><span class="big-title">работы</span></p>
+    </div>
+    <div class="container">
+    <div class="inline33">
+    <img src="img/plan1.jpg">
+    <p>Оставляете заявку и мы <br>согласовываем время<br> приезда нашего <br>специалиста</p>
+    </div>
+
+        <div class="inline33">
+    <img src="img/plan2.jpg">
+    <p>Составляем 3 варианта <br>сметы и проводим <br>бесплатную <br>демонстрацию <br>оборудования у Вас на <br>объекте </p>
+    </div>
+
+        <div class="inline33">
+    <img src="img/plan3.jpg">
+    <p>Подписываем договор</p>
+    </div>
+
+        <div class="inline33">
+    <img src="img/plan4.jpg">
+    <p>Проводим монтажные <br>работы и обучаем, как<br> пользоваться системой</p>
+    </div>
+
+        <div class="inline33">
+    <img src="img/plan5.jpg">
+    <p>Подписываем акт о <br>выполненных работах</p>
+    </div>
+
+        <div class="inline33">
+    <img src="img/plan6.jpg">
+    <p>У вас рабочая систем с<br> нашей гарантией</p>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="header3">
+      <p class="my-header">наши<br><span class="big-title">клиенты</span></p>
+      </div>
+      <div class="clients"></div>
+    </div>
+    <br>
+    <div class="footer">
+    <div class="container">
+    <p class="reshaj">остались вопросы?<br><span>ЗВОНИ!</span></p>    
+    <div class="foot-left">
+    <p class="bot-phone">+7 000 <span>000-00-00</span></p>
+    
+    <p class="footer-n"><span class="bold">ОГРН:</span> 000000</p>
+    <p class="footer-n"><span class="bold">ИНН:</span> 0000000</p>
+    </div>
+    <div class="foot-right">
+      <div class="bottom-order-button">
+      <a href="#order-call" class="order-call">Заказать звонок</a>
+      </div>
+<div id="content">
+
+
+<div id="content">
+
+  <div class="menu">
+    <ul class="primary-menu">
+      <li class="facebook"><a class="social-item" href="#">f</a><span class="social-span">Присоединяйтесь к нам на Facebook</span></li>
+      <li class="twitter"><a class="social-item" href="#">t</a><span class="social-span">В Twitter</span></li>
+      <li class="flickr"><a class="social-item" href="#">c</a><span class="social-span">Добавьте нас в Flickr</span></li>
+      <li class="rss"><a class="social-item" href="#">a</a><span class="social-span">Следите за нами через RSS</span></li>
+      <li class="mail"><a class="social-item" href="#">k</a><span class="social-span">Подпишитесь на уведомления через почту</span></li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+</div>
+    </div>
+    </div>
+    <p class="copy">&copy 2013</p>
+    </div>
+    
+  <script src="js/jquery.countdown.js"></script>
+  
+
+
+</body>
+</html>
