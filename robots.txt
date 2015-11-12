@@ -1,0 +1,11 @@
+User-agent: *
+Crawl-delay: 5
+Sitemap: http://videonablyudenie.info/sitemap.xml
+Disallow: /js/
+Disallow: /css/
+Disallow: /font/
+Disallow: /fonts/
+Disallow: /scripts/
+Disallow: /engine/
+
+
