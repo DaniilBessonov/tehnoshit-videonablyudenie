@@ -1,18 +1,27 @@
-/* ===== PRIMARY STYLES =====================================================
-   ========================================================================== */
+@font-face {
+    font-family: 'Conv_DINPro-Medium';
+    src: url('fonts/DINPro-Medium.eot');
+    src: local('☺'), url('../fonts/DINPro-Medium.woff') format('woff'), url('../fonts/DINPro-Medium.ttf') format('truetype'), url('../fonts/DINPro-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DinPro';
+    src: url('../fonts/fontscore.com_d-dinproregular.eot');
+    src: local('☺'), url('../fonts/fontscore.com_d-dinproregular.woff') format('woff'), url('../fonts/fontscore.com_d-dinproregular.ttf') format('truetype'), url('../fonts/fontscore.com_d-dinproregular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*========================= global ===========================*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+canvas, embed, output, ruby, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -79,6 +88,9 @@ body {
     top: 50%;
     visibility: hidden;
     z-index: 10;
+    max-height: 100%;
+    overflow-y: auto;
+    padding-top: 20px;
  
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -106,7 +118,7 @@ padding: 25px 0 25px 0;
 }
 
 .order-form input[type="text"] {
-  margin-left: none;
+  margin-left: 0;
   width: 240px;
 }
 
@@ -240,7 +252,7 @@ line-height: 1;
 }
 
 .form-big-text {
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   font-weight: 700;
 }
@@ -364,13 +376,22 @@ height: 30px;
   text-decoration: underline;
 }
 
-.in-numbers {
-  height: 210px;
+.in-numbers-parts {
+    padding: 20px 0;
 }
 
-.numb {
-  background: url(../img/background/numb.png) no-repeat center center;
-  height: 220px;
+.num {
+    height: 141px;
+    float: left;
+    padding-right: 2px;
+    margin-right: 2px;
+    border-right: 1px solid #000;
+}
+
+.num:last-child {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .Fixed {
@@ -390,17 +411,6 @@ height: 30px;
   right: -120px;
   opacity: 1;
   /*background-color: rgba(255,255,255,0.1);*/
-}
-
-.Fixed a {
-  color: #666;
-  text-decoration: none;
-  font-size: 18px;
-  margin-left: 20px;
-}
-
-.Fixed a:hover {
-  text-decoration: underline;
 }
 
 .video-in-phone {
@@ -506,16 +516,7 @@ line-height: 1;
  padding: 75px 7px;
 }
 
-.benefit6 {
-  background: url(../img/background/benefit6.png) no-repeat center center;
-  width: 217px;
-  margin: 5px auto;
-  margin: 5px auto;
-  height: 237px;
- padding: 75px 7px;
-}
-
-.benefit1:hover, .benefit2:hover, .benefit3:hover, .benefit4:hover, .benefit5:hover, .benefit6:hover {
+.benefit1:hover, .benefit2:hover, .benefit3:hover, .benefit4:hover, .benefit5:hover {
   background: url(../img/background/benefit-hover.png) no-repeat center center;
 }
 
@@ -543,15 +544,6 @@ border-bottom: 1px solid #EDF3F6;
 .how-bg {
   background: url(../img/background/how-wie.jpg) no-repeat center right 20%;
 height: 616px;
-}
-
-.numbers {
-  float: left;
-  padding-left: 400px;
-}
-
-.one-li {
-
 }
 
 .my-number {
@@ -636,6 +628,12 @@ height: 616px;
   margin: 20px 7px 20px 7px;
 }
 
+.mymy img {
+    max-height: 300px;
+    border: 1px solid #23C62B;
+    margin: 10px;
+}
+
 .closef {      
   line-height: 24px;
   position: absolute;
@@ -670,6 +668,9 @@ height: 616px;
   display: inline-block;
   vertical-align: top;
 }
+.inline33 p {
+    min-height: 84px;
+}
 
 .footer {
   background: url(../img/background/footer.jpg) center top;
@@ -687,10 +688,6 @@ height: 616px;
 .reshaj span{
   font-size: 50px;
   font-weight: 700;
-}
-
-.foot-left {
-  float: left;  
 }
 
 .bot-phone {
@@ -715,26 +712,11 @@ height: 616px;
   color: #fff;
 }
 
-.bold {
-  font-weight: 700;
-}
-
 .copy {
   text-align: center;
   color: #fff;
   clear: both;
   margin-top: 20px;
-}
-
-.foot-right {
-  float: right;
-}
-
-.bottom-order-button {
-  background: rgba(255,255,255,0.7);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 19px 90px 0 50px;
 }
 
 .privacy-polisyy {
@@ -898,15 +880,73 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin-bottom: 15px;
 }
 
-.header3 {
-  width: 580px;
-  height: 100px;
-  border-bottom: 1px solid #7CD671;
-  margin: 0 auto;
-  padding-top: 15px;
+#map {
+    width: 100%;
+    height: 600px;
+    display: none;
 }
-.clients {
-  background: url(../img/background/clients.png) no-repeat top center;
-  height: 178px;
-  margin-top: 15px;
+
+.client img {
+    height: 100px;
+}
+
+.client .caption p:first-child {
+    min-height: 66px;
+}
+
+#page-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+
+    padding: 5px 0;
+    border: 1px solid #00A727;
+    color: #fff;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(3%, rgba(130, 227, 74, 1)), color-stop(96%, rgba(0, 172, 47, 1)), color-stop(100%, rgba(79, 189, 101, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#4fbd65', GradientType=0);
+}
+
+#page-title h1 {
+    font-size: 24px;
+}
+
+.green-button {
+    border-radius: 4px;
+    display: block;
+    border: 1px solid #00A727;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(3%, rgba(130, 227, 74, 1)), color-stop(96%, rgba(0, 172, 47, 1)), color-stop(100%, rgba(79, 189, 101, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(130, 227, 74, 1) 3%, rgba(0, 172, 47, 1) 96%, rgba(79, 189, 101, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#4fbd65', GradientType=0);
+}
+
+.green-button:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(158, 233, 114, 1) 3%, rgba(0, 199, 53, 1) 96%, rgba(111, 200, 129, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(3%, rgba(158, 233, 114, 1)), color-stop(96%, rgba(0, 199, 53, 1)), color-stop(100%, rgba(111, 200, 129, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(158, 233, 114, 1) 3%, rgba(0, 199, 53, 1) 96%, rgba(111, 200, 129, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(158, 233, 114, 1) 3%, rgba(0, 199, 53, 1) 96%, rgba(111, 200, 129, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(158, 233, 114, 1) 3%, rgba(0, 199, 53, 1) 96%, rgba(111, 200, 129, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(158, 233, 114, 1) 3%, rgba(0, 199, 53, 1) 96%, rgba(111, 200, 129, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#6fc881', GradientType=0);
+}
+
+.contacts strong {
+    font-weight: 700;
 }

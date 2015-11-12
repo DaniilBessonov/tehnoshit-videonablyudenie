@@ -8,7 +8,7 @@ body {
     font-family: 'Social';
     src: url('./fonts/socialicons-webfont.eot');
     src: url('./fonts/socialicons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/socialicons-webfont.woff') format('woff'),
+         url('../fonts/socialicons-webfont.woff') format('woff'),
          url('./fonts/socialicons-webfont.ttf') format('truetype'),
          url('./fonts/socialicons-webfont.svg#SocialIconsMedium') format('svg');
     font-weight: normal;

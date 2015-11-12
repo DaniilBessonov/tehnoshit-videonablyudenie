@@ -1,4 +1,68 @@
-$(".carousel-button-right").live('click',function(){ 
+$(function(){
+    $("#slides").slides({
+        slide: {
+            browserWindow: true
+        }
+    });
+});
+
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+$(document).ready(function() {
+    var phone_box = $("input.nameinp[name='phone']");
+    phone_box.mask("+7 (999) 999-99-99", {
+        completed: function () {
+        }
+    });
+
+    $('.s_submit').click(function() {
+        filled = 1;
+        $(this).parent().children('.sinp').each(function() {
+            if(this.value.replace(/^\s+|\s+$/g, '')=='' || this.value=='Ваше имя' || this.value=='Ваше имя' || this.value=='Ваш телефон') {$(this).effect('highlight');filled=0;}
+        });
+        var q=$(this).parent().children('.email');
+        if(!validateEmail(q.val())&&(q.val()!='')) {q.effect('highlight');filled=0;}
+        if(filled==1) {
+            q=$(this).parent().children('.fhid').val();
+            $(this).parent().submit();
+            $('#dialogform').dialog('close');
+            $('#dialogform2').dialog('close');
+        }
+    });
+});
+
+
+function initializeMap() {
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+        center: new google.maps.LatLng(51.658518, 39.19594689999997),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(51.658518, 39.19594689999997),
+        map: map
+    });
+
+}
+function toggleMap(el) {
+    if ($(el).html() == "Показать на карте") {
+        $(el).html("Скрыть карту");
+        $("#map").show();
+        initializeMap();
+    } else {
+        $(el).html("Показать на карте");
+        $("#map").hide();
+    }
+
+}
+
+// --- carousel ---
+
+$(".carousel-button-right").live('click',function(){
    right_carusel_click();
 });
    
