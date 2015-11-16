@@ -1,4 +1,7 @@
 <?php
+include_once "SmsSender.php";
+include_once "Utils.php";
+
 if (isset($_POST['phone'])) {
     $phone = $_POST['phone'];
 } else {
@@ -9,22 +12,43 @@ if (isset($_POST['name'])) {
 } else {
     header('Location: fail.php?reason=Не%20указано%20имя');
 }
-/*echo 'Phone: ' . $phone . '<br>';
-echo 'Name: ' . $name . '<br>';*/
 
-sendEmail("dabessonov@yandex.ru", $phone, $name);
+$isSmsSuccess = smsForAdministrator($phone, $name);
+$isEmailSuccess = sendEmail("dabessonov@yandex.ru", $phone, $name, $isSmsSuccess);
 
-function sendEmail($address, $phone, $name)
+if (!$isEmailSuccess) {
+    header('Location: fail.php?reason=Сбой%20уведомлений.%20Позвоните%20нам!');
+}
+
+function sendEmail($address, $phone, $name, $isSmsSuccess = true)
 {
     $mes = "Заказ обратного звонка!\nИмя клиента: $name\nТелефон: $phone\n\nСвяжитесь с клиентом как можно быстрее!";
+    if (!$isSmsSuccess) $mes .= "\n\nSMS не доставлено!";
 
     $sub = 'Заказ обратного звонка';
+
     //$email = 'call-back@videonablyudenie.info'; // от кого
     $send = mail($address, $sub, $mes);
     //$headers = 'From: webmaster@example.com';
     //$send = mail($address, $sub, $mes, "Content-type:text/plain; charset = utf-8\r\nFrom:$email");
     //$send = mail($address, $sub, $mes, $headers);
     //echo 'Email: ' . $send . '<br>';
+    return $send;
+}
+
+function smsNotification($phone, $text)
+{
+    $api = new SmsSender(1); //TODO testMode=1
+    $r = $api->send($phone, $text);
+    return $r['isSuccess'];
+}
+
+function smsForAdministrator($phone, $name)
+{
+    $admin_phone = '89515575856';
+    $translitName = Utils::convertToTranslite($name);
+    $smsText = "Client: $translitName $phone. Videonabludenie";
+    return smsNotification($admin_phone, $smsText);
 }
 
 ini_set('short_open_tag', 'On');

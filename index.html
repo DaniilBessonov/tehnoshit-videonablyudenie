@@ -8,12 +8,36 @@
     <meta name="description"
           content="Системы видеонаблюдения под ключ в Воронеже. Установка камер видеонаблюдения, ip камер, охранной сигнализации, контроля доступа.">
     <meta name="robots" content="INDEX, FOLLOW">
-	<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33558068 = new Ya.Metrika({ id:33558068, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33558068" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript"> (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter33558068 = new Ya.Metrika({ id: 33558068, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+            } catch (e) {
+            }
+        });
+        var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");</script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/33558068" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <meta property="og:title" content=">Установка систем видеонаблюдения, ip камер, охранной сигнализации">
     <meta property="og:url" content="http://videonablyudenie.info">
     <meta property="og:image" content="http://videonablyudenie.info/img/site-preview.png">
-    <meta property="og:description" content="Системы видеонаблюдения под ключ в Воронеже. Установка камер видеонаблюдения, ip камер, охранной сигнализации, контроля доступа.">
+    <meta property="og:description"
+          content="Системы видеонаблюдения под ключ в Воронеже. Установка камер видеонаблюдения, ip камер, охранной сигнализации, контроля доступа.">
 
     <meta name="geo.region" content="RU"/>
     <meta name="geo.placename" content="Воронеж"/>
@@ -68,7 +92,9 @@
         <div class="top-form-contain">
             <div class="contens-form">
                 <p class="form-descript"><span>отправьте заявку</span></p>
+
                 <p class="form-big-text">УЗНАЙТЕ ЦЕНУ СЕГОДНЯ</p>
+
                 <form class="s_form" action="form_processor.php" method="POST">
                     <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя" required>
                     <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон" required>
@@ -165,13 +191,22 @@
     <p class="my-header">наши<br><span class="big-title">лицензии</span></p>
 </div>
 <div class="certificates container">
-    <a class="mymy" href="#license1"><img src="http://t-sch.ru/liza/mchs.jpg" alt="Лицензия"></a>
-    <a class="mymy" href="#license2"><img src="http://t-sch.ru/liza/mchs_revers.jpg" alt="Лицензия"></a>
-    <a class="mymy" href="#license3"><img src="http://t-sch.ru/sertifikat/sertifikat_hikvizon.jpg" alt="Лицензия"></a>
-    <a class="mymy" href="#license4"><img src="http://t-sch.ru/sertifikat/axis.jpg" alt="Лицензия"></a>
+    <a class="mymy" href="#license1" onclick="lazyLoadingImg(this)"><img src="images/license/pozhar1.jpg" alt="Лицензия" data-big-img="http://t-sch.ru/liza/mchs.jpg"></a>
+    <a class="mymy" href="#license2" onclick="lazyLoadingImg(this)"><img src="images/license/pozhar2.jpg" alt="Лицензия" data-big-img="http://t-sch.ru/liza/mchs_revers.jpg"></a>
+    <a class="mymy" href="#license3" onclick="lazyLoadingImg(this)"><img src="http://t-sch.ru/sertifikat/sertifikat_hikvizon.jpg" alt="Лицензия"></a>
+    <a class="mymy" href="#license4" onclick="lazyLoadingImg(this)"><img src="http://t-sch.ru/sertifikat/axis.jpg" alt="Лицензия"></a>
 
+    <div id="img-viewer">
+        <a href="#x" class="overlay"></a>
 
-    <a href="#x" class="overlay" id="license1"></a>
+        <div class="popup">
+            <div class="feedbackf">
+                <a class="closef" title="Закрыть" href="#close"></a>
+            </div>
+        </div>
+    </div>
+
+<!--    <a href="#x" class="overlay" id="license1"></a>
 
     <div class="popup">
         <div class="feedbackf">
@@ -215,7 +250,7 @@
             <img alt="Лицензия" src="img/certificates/5.jpg">
         </div>
     </div>
-</div>
+</div>-->
 
 
 <div class="how-wie">
@@ -481,14 +516,6 @@
         </div>
     </div>
 
-    <a href="#x" class="overlay" id="image5"></a>
-
-    <div class="popup">
-        <div class="feedbackf">
-            <a class="closef" title="Закрыть" href="#close"></a>
-            <img alt="Сертификат" src="img/certificates/5.jpg">
-        </div>
-    </div>
 </div>
 
 
@@ -503,7 +530,7 @@
         <div class="caption">
             <p>Центральный Банк РФ</p>
 
-            <p><a href="#client1" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client1" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/cbrf1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -514,7 +541,7 @@
         <div class="caption">
             <p>ООО "ВЫБОР"</p>
 
-            <p><a href="#client12" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client12" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/Vb_b.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -525,7 +552,7 @@
         <div class="caption">
             <p>ДОАО "Газпроектинжиниринг"</p>
 
-            <p><a href="#client2" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client2" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/gaz1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -536,7 +563,7 @@
         <div class="caption">
             <p>ООО "Инвестиционная палата"</p>
 
-            <p><a href="#client3" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client3" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/invest.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -547,7 +574,7 @@
         <div class="caption">
             <p>ООО "Воронежский шинный завод"</p>
 
-            <p><a href="#client4" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client4" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/vhz_1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -558,7 +585,7 @@
         <div class="caption">
             <p>ООО "КЕЛЛОГГ РУС"</p>
 
-            <p><a href="#client5" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client5" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/keylog.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -569,7 +596,7 @@
         <div class="caption">
             <p>Администрация Панинского района</p>
 
-            <p><a href="#client6" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client6" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/admin%20panino.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -580,7 +607,7 @@
         <div class="caption">
             <p>ЗАО "Интегратор"</p>
 
-            <p><a href="#client7" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client7" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/integrator1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -591,7 +618,7 @@
         <div class="caption">
             <p>ЗАО "МОЛВЕСТ"</p>
 
-            <p><a href="#client8" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client8" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/molvest1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -602,7 +629,7 @@
         <div class="caption">
             <p>ООО "Компания "Воронежский ТЕХНОПАРК"</p>
 
-            <p><a href="#client9" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client9" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/tpv1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -613,7 +640,7 @@
         <div class="caption">
             <p>ЗАО "ПРИССКО"</p>
 
-            <p><a href="#client10" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client10" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/prissko1.jpg">Читать отзыв</a></p>
         </div>
     </div>
 </div>
@@ -624,122 +651,8 @@
         <div class="caption">
             <p>ОАО ТНИИР "ЭФИР"</p>
 
-            <p><a href="#client11" class="btn btn-link" role="button">Читать отзыв</a></p>
+            <p><a href="#client11" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/tambo_star1.jpg">Читать отзыв</a></p>
         </div>
-    </div>
-</div>
-
-
-<a href="#x" class="overlay" id="client1"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/cbrf1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client2"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/gaz1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client3"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/invest.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client4"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/vhz_1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client5"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/keylog.jpg">
-    </div>
-</div>
-<a href="#x" class="overlay" id="client6"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/admin%20panino.jpg">
-    </div>
-</div>
-<a href="#x" class="overlay" id="client7"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/integrator1.jpg">
-    </div>
-</div>
-<a href="#x" class="overlay" id="client8"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/molvest1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client9"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/tpv1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client10"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/prissko1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client11"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/tambo_star1.jpg">
-    </div>
-</div>
-
-<a href="#x" class="overlay" id="client12"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/Vb_b.jpg">
-    </div>
-</div>
-<a href="#x" class="overlay" id="client13"></a>
-
-<div class="popup">
-    <div class="feedbackf">
-        <a class="closef" title="Закрыть" href="#close"></a>
-        <img alt="Благодарственное письмо" src="http://t-sch.ru/coment/ar.jpg">
     </div>
 </div>
 </div>
@@ -750,6 +663,7 @@
         <div class="top-form-contain">
             <div class="contens-form">
                 <p class="form-descript"><span>отправьте заявку</span></p>
+
                 <p class="form-big-text">УЗНАЙТЕ ЦЕНУ СЕГОДНЯ</p>
 
                 <form class="s_form" action="form_processor.php" method="POST">
@@ -835,7 +749,6 @@
 </div>
 
 
-
 <!-- /////////////////////////// Pop-up \\\\\\\\\\\\\\\\\\\\\\\\ -->
 
 <a href="#x" class="overlay" id="order-call"></a>
@@ -897,6 +810,7 @@
             <li class="system-list">Пункты приема-отгрузки товара</li>
         </ul>
         <br>
+
         <p><a href="#order-call" class="order-call">отправить заявку</a></p>
 
         <!--<form class="s_form" action="form_processor.php" method="POST">
@@ -1236,7 +1150,8 @@
 
     <div class="privacy-polisyy">
         <p>
-            Администрация сайта <a href="http://videonablyudenie.info/">videonablyudenie.info</a> (далее Сайт) с уважением
+            Администрация сайта <a href="http://videonablyudenie.info/">videonablyudenie.info</a> (далее Сайт) с
+            уважением
             относится к правам посетителей Сайта. Мы
             безоговорочно признаем важность конфиденциальности личной информации посетителей нашего Сайта.</p>
 
