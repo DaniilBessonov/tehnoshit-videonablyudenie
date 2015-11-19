@@ -52,12 +52,27 @@
 
     <style>
         @media (min-width: 992px) {
+            /*md*/
             .priimuschestva .inline3:last-child {
                 padding-right: 170px;
             }
 
             .priimuschestva .inline3:nth-child(4) {
                 padding-left: 170px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            /*sm*/
+            .header-bg img {
+                zoom: 0.8;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /*xs*/
+            .header-bg img {
+                zoom: 0.5;
             }
         }
     </style>
@@ -76,34 +91,38 @@
 </div>
 
 <div class="header-bg">
-    <div class="container">
-        <img src="img/logo-1.png" style="float:left" alt="Компания Технощит">
+    <div class="container row">
 
-        <div class="logoNdescript">
-            <p class="description">ООО "Технощит" - интегратор систем безопасности<br>с 20 летним опытом в области
-                видеонаблюдения</p>
+        <div class="col-xs-12 col-sm-12 col-md-7">
+            <div class="logoNdescript">
+                <p class="description">ООО "Технощит" - интегратор систем безопасности<br>с 20 летним опытом в области
+                    видеонаблюдения</p>
+            </div>
+            <img src="img/logo-1.png" style="float:left" alt="Компания Технощит">
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-5">
+            <div class="order-box center-block">
+                <p class="telephone"> (473) <span class="width40-bold">239-31-40</span></p>
+                <a href="#order-call" class="order-call">Заказать звонок</a>
+            </div>
 
-        <div class="order-box">
-            <p class="telephone"> (473) <span class="width40-bold">239-31-40</span></p>
-            <a href="#order-call" class="order-call">Заказать звонок</a>
-        </div>
+            <div class="top-form-contain center-block">
+                <div class="contens-form">
+                    <p class="form-descript"><span>отправьте заявку</span></p>
 
-        <div class="top-form-contain">
-            <div class="contens-form">
-                <p class="form-descript"><span>отправьте заявку</span></p>
+                    <p class="form-big-text">УЗНАЙТЕ ЦЕНУ СЕГОДНЯ</p>
 
-                <p class="form-big-text">УЗНАЙТЕ ЦЕНУ СЕГОДНЯ</p>
-
-                <form class="s_form" action="form_processor.php" method="POST">
-                    <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя" required>
-                    <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон" required>
-                    <input class="s_submit" type="submit" value="отправить заявку">
-                </form>
-                <div class="guarantie"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не
-                    рассылаем спам</a></div>
+                    <form class="s_form" action="form_processor.php" method="POST">
+                        <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя" required>
+                        <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон" required>
+                        <input class="s_submit" type="submit" value="отправить заявку">
+                    </form>
+                    <div class="guarantie"><a href="#privacy-policy">Мы гарантируем конфиденциальность ваших данных и не
+                        рассылаем спам</a></div>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -191,10 +210,14 @@
     <p class="my-header">наши<br><span class="big-title">лицензии</span></p>
 </div>
 <div class="certificates container">
-    <a class="mymy" href="#license1" onclick="lazyLoadingImg(this)"><img src="images/license/pozhar1.jpg" alt="Лицензия" data-big-img="http://t-sch.ru/liza/mchs.jpg"></a>
-    <a class="mymy" href="#license2" onclick="lazyLoadingImg(this)"><img src="images/license/pozhar2.jpg" alt="Лицензия" data-big-img="http://t-sch.ru/liza/mchs_revers.jpg"></a>
-    <a class="mymy" href="#license3" onclick="lazyLoadingImg(this)"><img src="http://t-sch.ru/sertifikat/sertifikat_hikvizon.jpg" alt="Лицензия"></a>
-    <a class="mymy" href="#license4" onclick="lazyLoadingImg(this)"><img src="http://t-sch.ru/sertifikat/axis.jpg" alt="Лицензия"></a>
+    <a class="mymy" href="#license1" onclick="lazyLoadingImg(this)"><img src="images/license/pozhar1.jpg" alt="Лицензия"
+                                                                         data-big-img="http://t-sch.ru/liza/mchs.jpg"></a>
+    <a class="mymy" href="#license2" onclick="lazyLoadingImg(this)"><img src="images/license/pozhar2.jpg" alt="Лицензия"
+                                                                         data-big-img="http://t-sch.ru/liza/mchs_revers.jpg"></a>
+    <a class="mymy" href="#license3" onclick="lazyLoadingImg(this)"><img
+            src="http://t-sch.ru/sertifikat/sertifikat_hikvizon.jpg" alt="Лицензия"></a>
+    <a class="mymy" href="#license4" onclick="lazyLoadingImg(this)"><img src="http://t-sch.ru/sertifikat/axis.jpg"
+                                                                         alt="Лицензия"></a>
 
     <div id="img-viewer">
         <a href="#x" class="overlay"></a>
@@ -205,53 +228,7 @@
             </div>
         </div>
     </div>
-
-<!--    <a href="#x" class="overlay" id="license1"></a>
-
-    <div class="popup">
-        <div class="feedbackf">
-            <a class="closef" title="Закрыть" href="#close"></a>
-            <img alt="Лицензия" src="http://t-sch.ru/liza/mchs.jpg">
-        </div>
-    </div>
-
-    <a href="#x" class="overlay" id="license2"></a>
-
-    <div class="popup">
-        <div class="feedbackf">
-            <a class="closef" title="Закрыть" href="#close"></a>
-            <img alt="Лицензия" src="http://t-sch.ru/liza/mchs_revers.jpg">
-        </div>
-    </div>
-
-    <a href="#x" class="overlay" id="license3"></a>
-
-    <div class="popup">
-        <div class="feedbackf">
-            <a class="closef" title="Закрыть" href="#close"></a>
-            <img alt="Лицензия" src="http://t-sch.ru/sertifikat/sertifikat_hikvizon.jpg">
-        </div>
-    </div>
-
-    <a href="#x" class="overlay" id="license4"></a>
-
-    <div class="popup">
-        <div class="feedbackf">
-            <a class="closef" title="Закрыть" href="#close"></a>
-            <img alt="Лицензия" src="http://t-sch.ru/sertifikat/axis.jpg">
-        </div>
-    </div>
-
-    <a href="#x" class="overlay" id="license5"></a>
-
-    <div class="popup">
-        <div class="feedbackf">
-            <a class="closef" title="Закрыть" href="#close"></a>
-            <img alt="Лицензия" src="img/certificates/5.jpg">
-        </div>
-    </div>
-</div>-->
-
+</div>
 
 <div class="how-wie">
     <div class="visible-sm visible-xs">
@@ -523,144 +500,156 @@
     <p class="my-header">наши<br><span class="big-title">клиенты</span></p>
 </div>
 <div class="container certificates row">
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/cb.jpg" alt="Центральный Банк РФ">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/cb.jpg" alt="Центральный Банк РФ">
 
-        <div class="caption">
-            <p>Центральный Банк РФ</p>
+            <div class="caption">
+                <p>Центральный Банк РФ</p>
 
-            <p><a href="#client1" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/cbrf1.jpg">Читать отзыв</a></p>
+                <p><a href="#client1" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/cbrf1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/vibor.jpg" alt="ООО ВЫБОР">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/vibor.jpg" alt="ООО ВЫБОР">
 
-        <div class="caption">
-            <p>ООО "ВЫБОР"</p>
+            <div class="caption">
+                <p>ООО "ВЫБОР"</p>
 
-            <p><a href="#client12" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/Vb_b.jpg">Читать отзыв</a></p>
+                <p><a href="#client12" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/Vb_b.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/gaz-proekt.jpg" alt="ДОАО Газпроектинжиниринг">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/gaz-proekt.jpg" alt="ДОАО Газпроектинжиниринг">
 
-        <div class="caption">
-            <p>ДОАО "Газпроектинжиниринг"</p>
+            <div class="caption">
+                <p>ДОАО "Газпроектинжиниринг"</p>
 
-            <p><a href="#client2" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/gaz1.jpg">Читать отзыв</a></p>
+                <p><a href="#client2" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/gaz1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/invest-palata.jpg" alt="ООО Инвестиционная палата">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/invest-palata.jpg" alt="ООО Инвестиционная палата">
 
-        <div class="caption">
-            <p>ООО "Инвестиционная палата"</p>
+            <div class="caption">
+                <p>ООО "Инвестиционная палата"</p>
 
-            <p><a href="#client3" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/invest.jpg">Читать отзыв</a></p>
+                <p><a href="#client3" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/invest.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/shinniy.jpg" alt="ООО Воронежский шинный завод">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/shinniy.jpg" alt="ООО Воронежский шинный завод">
 
-        <div class="caption">
-            <p>ООО "Воронежский шинный завод"</p>
+            <div class="caption">
+                <p>ООО "Воронежский шинный завод"</p>
 
-            <p><a href="#client4" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/vhz_1.jpg">Читать отзыв</a></p>
+                <p><a href="#client4" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/vhz_1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/kellogs.jpg" alt="ООО КЕЛЛОГГ РУС">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/kellogs.jpg" alt="ООО КЕЛЛОГГ РУС">
 
-        <div class="caption">
-            <p>ООО "КЕЛЛОГГ РУС"</p>
+            <div class="caption">
+                <p>ООО "КЕЛЛОГГ РУС"</p>
 
-            <p><a href="#client5" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/keylog.jpg">Читать отзыв</a></p>
+                <p><a href="#client5" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/keylog.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="http://www.heraldik.ru/reg36/36paninsky_g.gif" alt="Администрация Панинского района">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="http://www.heraldik.ru/reg36/36paninsky_g.gif" alt="Администрация Панинского района">
 
-        <div class="caption">
-            <p>Администрация Панинского района</p>
+            <div class="caption">
+                <p>Администрация Панинского района</p>
 
-            <p><a href="#client6" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/admin%20panino.jpg">Читать отзыв</a></p>
+                <p><a href="#client6" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/admin%20panino.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/integrator.jpg" alt="ЗАО Интегратор">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/integrator.jpg" alt="ЗАО Интегратор">
 
-        <div class="caption">
-            <p>ЗАО "Интегратор"</p>
+            <div class="caption">
+                <p>ЗАО "Интегратор"</p>
 
-            <p><a href="#client7" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/integrator1.jpg">Читать отзыв</a></p>
+                <p><a href="#client7" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/integrator1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/molvest.jpg" alt="ЗАО МОЛВЕСТ">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/molvest.jpg" alt="ЗАО МОЛВЕСТ">
 
-        <div class="caption">
-            <p>ЗАО "МОЛВЕСТ"</p>
+            <div class="caption">
+                <p>ЗАО "МОЛВЕСТ"</p>
 
-            <p><a href="#client8" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/molvest1.jpg">Читать отзыв</a></p>
+                <p><a href="#client8" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/molvest1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/tehnopark.jpg" alt="Воронежский ТЕХНОПАРК">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/tehnopark.jpg" alt="Воронежский ТЕХНОПАРК">
 
-        <div class="caption">
-            <p>ООО "Компания "Воронежский ТЕХНОПАРК"</p>
+            <div class="caption">
+                <p>ООО "Компания "Воронежский ТЕХНОПАРК"</p>
 
-            <p><a href="#client9" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/tpv1.jpg">Читать отзыв</a></p>
+                <p><a href="#client9" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/tpv1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/prisco.jpg" alt="ЗАО ПРИССКО">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/prisco.jpg" alt="ЗАО ПРИССКО">
 
-        <div class="caption">
-            <p>ЗАО "ПРИССКО"</p>
+            <div class="caption">
+                <p>ЗАО "ПРИССКО"</p>
 
-            <p><a href="#client10" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/prissko1.jpg">Читать отзыв</a></p>
+                <p><a href="#client10" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/prissko1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-xs-6  col-sm-4 col-md-3">
-    <div class="thumbnail client">
-        <img src="./img/clients/efir.jpg" alt="ОАО ТНИИР ЭФИР">
+    <div class="col-xs-6  col-sm-4 col-md-3">
+        <div class="thumbnail client">
+            <img src="./img/clients/efir.jpg" alt="ОАО ТНИИР ЭФИР">
 
-        <div class="caption">
-            <p>ОАО ТНИИР "ЭФИР"</p>
+            <div class="caption">
+                <p>ОАО ТНИИР "ЭФИР"</p>
 
-            <p><a href="#client11" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/tambo_star1.jpg">Читать отзыв</a></p>
+                <p><a href="#client11" class="btn btn-link" role="button" onclick="lazyLoadingClient(this)"
+                      data-big-img="http://t-sch.ru/coment/tambo_star1.jpg">Читать отзыв</a></p>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 
 <div class="middle-form">
     <div class="container">
-        <div class="top-form-contain">
+        <div class="top-form-contain" style="float: right;">
             <div class="contens-form">
                 <p class="form-descript"><span>отправьте заявку</span></p>
 

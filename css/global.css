@@ -148,16 +148,16 @@ padding: 25px 0 25px 0;
 
 .header-bg {
   background: url(../img/background/header.jpg) no-repeat center top;
-  height: 570px;
+  min-height: 570px;
 }
 
 .logoNdescript {
   background: rgba(255,255,255,0.7);
   padding: 25px 8px 10px 8px;
-  width: 432px;
+  /*width: 432px;*/
   border-radius: 0 0 10px 10px;
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .description {
@@ -168,12 +168,11 @@ padding: 25px 0 25px 0;
 
 .order-box {
   background: rgba(255,255,255,0.7);
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
   width: 310px;
-  float: right; 
-  padding: 12px 8px 10px 8px; 
+  padding: 12px 8px 10px 8px;
   text-align: center;
-  display: inline-block;
+  margin-top: -10px;
 }
 
 .telephone {
@@ -235,9 +234,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   background: rgba(255,255,255,0.7);
   border-radius: 10px;
   width: 310px;
-  float: right; 
+  /*float: right;*/
   padding-top: 25px;
-  padding-bottom: 25px;  
+  padding-bottom: 25px;
+  margin-top: 5px;
 }
 
 .form-descript {
@@ -895,6 +895,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 #page-title {
+    position: relative;
+    z-index: 200;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
