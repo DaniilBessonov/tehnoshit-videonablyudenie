@@ -7,7 +7,7 @@ function lazyLoadingImg(el) {
         url = $(el).children("img").attr("src");
     }
     var alt = $(el).children("img").attr("alt");
-    var img = '<img alt="' + alt + '" src="' + url + '">';
+    var img = '<img alt="' + alt + '" src="' + url + '" style="max-width: '+($(window).width()-10)+'px; max-height: '+($(window).height()-40)+'px;">';
     targetContainer.children("a").attr("id", id);
     targetContainer.children(".popup").children(".feedbackf").append(img);
 }
@@ -42,6 +42,7 @@ $(document).ready(function() {
     });
 
     $('.s_submit').click(function() {
+        yaCounter30665247.reachGoal('TRY_FORM_SEND');
         filled = 1;
         $(this).parent().children('.sinp').each(function() {
             if(this.value.replace(/^\s+|\s+$/g, '')=='' || this.value=='Ваше имя' || this.value=='Ваше имя' || this.value=='Ваш телефон') {$(this).effect('highlight');filled=0;}
