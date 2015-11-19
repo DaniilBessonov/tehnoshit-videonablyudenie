@@ -60,6 +60,10 @@
             .priimuschestva .inline3:nth-child(4) {
                 padding-left: 170px;
             }
+
+            .order-box {
+                margin-top: -10px;
+            }
         }
 
         @media (min-width: 768px) and (max-width: 992px) {
@@ -71,9 +75,7 @@
 
         @media (max-width: 768px) {
             /*xs*/
-            .header-bg img {
-                zoom: 0.5;
-            }
+
         }
     </style>
 </head>
@@ -98,7 +100,7 @@
                 <p class="description">ООО "Технощит" - интегратор систем безопасности<br>с 20 летним опытом в области
                     видеонаблюдения</p>
             </div>
-            <img src="img/logo-1.png" style="float:left" alt="Компания Технощит">
+            <img class="hidden-xs" src="img/logo-1.png" style="float:left" alt="Компания Технощит">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5">
             <div class="order-box center-block">
@@ -248,13 +250,13 @@
             <div class="one-li">
                 <p class="my-number">2.</p>
 
-                <p class="one-punkt">Наша компания является сертифицированным представителем <!--(link)--> ведущих
+                <p class="one-punkt">Наша компания является сертифицированным <a class="scrolled" href="#certificate-block">представителем</a> ведущих
                     производителей систем безопасности</p>
             </div>
             <div class="one-li">
                 <p class="my-number">3.</p>
 
-                <p class="one-punkt">Крупнейшие компании<!--(link)--> региона доверяют нам свою безопасность</p>
+                <p class="one-punkt">Крупнейшие <a class="scrolled" href="#client-block">компании</a> региона доверяют нам свою безопасность</p>
             </div>
             <div class="one-li">
                 <p class="my-number">4.</p>
@@ -399,7 +401,7 @@
         </div>
         <div class="inline3 col-xs-12  col-sm-12 col-md-6">
             <div class="benefit5">
-                <p class="benefit-text">ЦЕНТРОБАНК РФ<!--(link)--><br>доверяет нам<br>СВОЮ БЕЗОПАСНОСТЬ</p>
+                <p class="benefit-text"><a href="#client1" onclick="lazyLoadingClient(this)" data-big-img="http://t-sch.ru/coment/cbrf1.jpg">ЦЕНТРОБАНК РФ</a><!--(link)--><br>доверяет нам<br>СВОЮ БЕЗОПАСНОСТЬ</p>
             </div>
         </div>
     </div>
@@ -447,7 +449,7 @@
     </div>
 </div>
 
-<div class="header2">
+<div id="certificate-block" class="header2">
     <p class="my-header">наши<br><span class="big-title">сертификаты</span></p>
 </div>
 <div class="certificates container">
@@ -496,7 +498,7 @@
 </div>
 
 
-<div class="header2">
+<div id="client-block" class="header2">
     <p class="my-header">наши<br><span class="big-title">клиенты</span></p>
 </div>
 <div class="container certificates row">
@@ -1173,6 +1175,13 @@
 <script type="text/javascript" src="js/carousel.js"></script>
 <script type="text/javascript" src="js/slides.js"></script>
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('a.scrolled').parent().localScroll({duration:1500});
+    });
+</script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 </body>
 </html>

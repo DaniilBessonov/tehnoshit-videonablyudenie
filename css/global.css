@@ -88,8 +88,7 @@ body {
     top: 50%;
     visibility: hidden;
     z-index: 10;
-    max-height: 100%;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     padding-top: 20px;
  
     -webkit-transform: translate(-50%, -50%);
@@ -128,7 +127,7 @@ padding: 25px 0 25px 0;
 }
 
 .feedbackf {  
-  width: 930px;  
+  /*width: 930px;*/
   border-radius: 9px;
   position: relative;  
   text-align: center;
@@ -172,7 +171,7 @@ padding: 25px 0 25px 0;
   width: 310px;
   padding: 12px 8px 10px 8px;
   text-align: center;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
 .telephone {
@@ -896,7 +895,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #page-title {
     position: relative;
-    z-index: 200;
+    z-index: 1;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -951,4 +950,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .contacts strong {
     font-weight: 700;
+}
+
+a.scrolled{
+    text-decoration: none;
+    color: #23C62B;
+    border-bottom: 2px dashed #23C62B;
+}
+a.scrolled:hover{
+    text-decoration: none;
+    color: rgb(0,172,47);
+    border-bottom: 2px solid rgb(0,172,47);
 }
