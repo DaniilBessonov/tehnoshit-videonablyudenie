@@ -42,6 +42,7 @@ $(document).ready(function() {
     });
 
     $('.s_submit').click(function() {
+        yaCounter30665247.reachGoal('TRY_FORM_SEND');
         filled = 1;
         $(this).parent().children('.sinp').each(function() {
             if(this.value.replace(/^\s+|\s+$/g, '')=='' || this.value=='Ваше имя' || this.value=='Ваше имя' || this.value=='Ваш телефон') {$(this).effect('highlight');filled=0;}
