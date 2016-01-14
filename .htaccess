@@ -1,0 +1,4 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteEngine On
+RewriteCond %{HTTP_HOST} www.videonablyudenie.info [NC]
+RewriteRule (.*) http://videonablyudenie.info/$1 [R=301,L]
